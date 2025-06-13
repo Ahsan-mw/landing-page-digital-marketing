@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+:root {
+  --secondary-color: #2d2d2d;
+  --primary-color: #ac6cff;
+  --border-gray: #808080;
+  --text-color: #f8f9ff;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+header {
+  padding: 2.6rem 6.9rem;
+  background: var(--secondary-color);
+  border-bottom: 1px solid var(--border-gray);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.logo span {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 5.1rem;
+  align-items: center;
+}
+header ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  position: relative;
+  padding-bottom: 0.7rem;
+}
+
+.header-active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  height: 3px;
+  width: 2.5rem;
+  border-radius: 0.3rem;
+  background-color: var(--primary-color);
+}
+
+.headet-btns {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.headet-btn {
+  color: var(--text-color);
+  font-size: 1.6rem;
+}
+.header-btn-sign-up {
+  padding: 1.7rem 2rem;
+  background: var(--primary-color);
+
+  border-radius: 0.7rem;
+}
