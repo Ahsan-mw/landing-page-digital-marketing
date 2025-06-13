@@ -9,56 +9,87 @@
   <body>
     <header>
       <div class="header container">
-        <a href="#" class="logo">
+        <div class="header-mobile-btn">
           <svg
-            width="30"
-            height="30"
-            viewBox="0 0 30 30"
+            class="hidden hamburger"
+            viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
           >
-            <rect width="30" height="30" fill="url(#pattern0_2003_340)" />
-            <defs>
-              <pattern
-                id="pattern0_2003_340"
-                patternContentUnits="objectBoundingBox"
-                width="1"
-                height="1"
-              >
-                <use xlink:href="#image0_2003_340" transform="scale(0.02)" />
-              </pattern>
-              <image
-                id="image0_2003_340"
-                width="50"
-                height="50"
-                preserveAspectRatio="none"
-                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEsklEQVR4nO2ZaahVVRTHn77SckCLQmlA0qRIaECjopIyoyQlE5REeCqNlKUSSVJYNBlEmkhpRYkDoj2pFLVBpMQoLBso0lev4aFYoliaWjTYLxatK7vl2ufs+7y7vtw/3A/33LX23v+91lnTbWioo446ag7gBuBlYDPwAbAAGAd0rmKN44FbgVeAD4ENwGzgrNqf+MjNG4ElxPEDMAnoULLGFGBnZI0/gcm5idxLGtZ51gF6A+sT9P8Sq+ci0RnYnUhkpqN/LvA96fhGrJeDyKXOrd0J3Ays1O+C14CORvdi4MfIgTepOz7j/HZ5DiKTzSabHaKrgG7m+YXAfueQe4AbK++TkAd2GJkpOYg8bjZZnKDTH9gVscJpjvxqI/dADiJPm03ml8j3Vj+3eN1aLdDZZGTvzkHkEbPJigLZbsDHDok1QKeITi8NvSGuzkFEkleITwtkvVyzEehSoPOYkd8HHJeDyDCz0S+SnR25WxwSLUDPkvV7AvOAQ6rzfM1J6EYnByG2gmuNzPnAr0ZmbzVlB/+Eail7+mQhopt8bg45R593Bc4BvnKsMQsYClwCnAl0z3bAVADPOe51gOohVvsOeFOj4W3AZdUUnVVDTT0H2NKOA7eH4AaNkBfV4vCNektf8P/iayV1RntIDAI+OsoDtAGtmhDls62dLljB78BLQL9UEsOdqIMT34uwumD9LhKNxG2AMcCDwDLgMycZxgjNKKyKxXzAz646fAncr9ZqdEqJCg7YGgo4Rj4Jl9gDuA54QvNOEVZFAwPwrKMgZcYQ2/EBYyMbTDdyE5WcfMaXkQkBXKCh26ucBQtjiluN4OKYCYFjHZ//KbwltUQos99aRhIl0AyMLEnEs4KMH2Kop/BtauUpDU/klq5MIQKcItUz8IfX23gArnLez2ZPcIUROqT5o5cjKxMUD+8YufFKRkg0Bc9HO7rDXAb/Xk9SQohWT2iwU0uh047DLgacGtykhyvKXnbtBluKLiES8aSlDtESE5aIYTHPyDxMMd4tGgcF60wwenKJ/SNd5rTI+Gh+Wd8hNVQFg0qCgu2zBWMTiHRy2uBHjUzRDG1faYWsVeoLUk47t2NxjZYSIbbF2lmz3mxHr2Pw+5MREnutC5dtZH37HmeyKAnyemezuQnrn+foDTTBwhv+HeGCVcGZEh7u4oC3nKg3OGFNqRrcpAoMDCz1ooycjoqALtpBTRpinHHHg+Z3KRh7lKw71+i8bd6j2g61gb6OmU83MlMdmeUl644w8gftpLLWREaZDXc7Mo0afi1uL1hXxkAWfXMSsbe9MSLXx5nz/lYUZZzh+PCcRKR3CLG0QHakUyXsifk78L6RvSknkafMZoVzp0gOaPPcxomGk3ISmWk2W1QiL/XUqw6Z7dYyDpGpOYncYTZrNcWkNEJrpagMnnXV/wdxepfRgZwddo/KSeRs50DLtPhrDnru9abMOCky0K5M5u27JxiQjYge6j3SMM3onaBj0BS0Zc0jgftIKC3DJ9IOG93u0mcn6DZlJREcaIhTqlQg3eB9loQzuPD+xRLXnPGfkDB+Px14Q11GOre7gBMT9aXba9Khm7TND8k72FBHHXU05MLfj7+o1sleCwAAAAAASUVORK5CYII="
-              />
-            </defs>
+            <path
+              d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12ZM3.75 7.125H20.25C20.5484 7.125 20.8345 7.00647 21.0455 6.7955C21.2565 6.58452 21.375 6.29837 21.375 6C21.375 5.70163 21.2565 5.41548 21.0455 5.2045C20.8345 4.99353 20.5484 4.875 20.25 4.875H3.75C3.45163 4.875 3.16548 4.99353 2.9545 5.2045C2.74353 5.41548 2.625 5.70163 2.625 6C2.625 6.29837 2.74353 6.58452 2.9545 6.7955C3.16548 7.00647 3.45163 7.125 3.75 7.125ZM20.25 16.875H3.75C3.45163 16.875 3.16548 16.9935 2.9545 17.2045C2.74353 17.4155 2.625 17.7016 2.625 18C2.625 18.2984 2.74353 18.5845 2.9545 18.7955C3.16548 19.0065 3.45163 19.125 3.75 19.125H20.25C20.5484 19.125 20.8345 19.0065 21.0455 18.7955C21.2565 18.5845 21.375 18.2984 21.375 18C21.375 17.7016 21.2565 17.4155 21.0455 17.2045C20.8345 16.9935 20.5484 16.875 20.25 16.875Z"
+              fill="white"
+            />
           </svg>
-          <span>Nusa Tech</span>
-        </a>
-        <ul>
-          <li>
-            <a href="#" class="header-active"> Home </a>
-          </li>
-          <li>
-            <a href="#"> About Us </a>
-          </li>
-          <li>
-            <a href="#"> Features </a>
-          </li>
-          <li>
-            <a href="#"> Our Works </a>
-          </li>
-          <li>
-            <a href="#"> Pricing </a>
-          </li>
-          <li>
-            <a href="#"> Resources </a>
-          </li>
-        </ul>
+
+          <a href="#" class="logo">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect width="30" height="30" fill="url(#pattern0_2003_340)" />
+              <defs>
+                <pattern
+                  id="pattern0_2003_340"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use xlink:href="#image0_2003_340" transform="scale(0.02)" />
+                </pattern>
+                <image
+                  id="image0_2003_340"
+                  width="50"
+                  height="50"
+                  preserveAspectRatio="none"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEsklEQVR4nO2ZaahVVRTHn77SckCLQmlA0qRIaECjopIyoyQlE5REeCqNlKUSSVJYNBlEmkhpRYkDoj2pFLVBpMQoLBso0lev4aFYoliaWjTYLxatK7vl2ufs+7y7vtw/3A/33LX23v+91lnTbWioo446ag7gBuBlYDPwAbAAGAd0rmKN44FbgVeAD4ENwGzgrNqf+MjNG4ElxPEDMAnoULLGFGBnZI0/gcm5idxLGtZ51gF6A+sT9P8Sq+ci0RnYnUhkpqN/LvA96fhGrJeDyKXOrd0J3Ays1O+C14CORvdi4MfIgTepOz7j/HZ5DiKTzSabHaKrgG7m+YXAfueQe4AbK++TkAd2GJkpOYg8bjZZnKDTH9gVscJpjvxqI/dADiJPm03ml8j3Vj+3eN1aLdDZZGTvzkHkEbPJigLZbsDHDok1QKeITi8NvSGuzkFEkleITwtkvVyzEehSoPOYkd8HHJeDyDCz0S+SnR25WxwSLUDPkvV7AvOAQ6rzfM1J6EYnByG2gmuNzPnAr0ZmbzVlB/+Eail7+mQhopt8bg45R593Bc4BvnKsMQsYClwCnAl0z3bAVADPOe51gOohVvsOeFOj4W3AZdUUnVVDTT0H2NKOA7eH4AaNkBfV4vCNektf8P/iayV1RntIDAI+OsoDtAGtmhDls62dLljB78BLQL9UEsOdqIMT34uwumD9LhKNxG2AMcCDwDLgMycZxgjNKKyKxXzAz646fAncr9ZqdEqJCg7YGgo4Rj4Jl9gDuA54QvNOEVZFAwPwrKMgZcYQ2/EBYyMbTDdyE5WcfMaXkQkBXKCh26ucBQtjiluN4OKYCYFjHZ//KbwltUQos99aRhIl0AyMLEnEs4KMH2Kop/BtauUpDU/klq5MIQKcItUz8IfX23gArnLez2ZPcIUROqT5o5cjKxMUD+8YufFKRkg0Bc9HO7rDXAb/Xk9SQohWT2iwU0uh047DLgacGtykhyvKXnbtBluKLiES8aSlDtESE5aIYTHPyDxMMd4tGgcF60wwenKJ/SNd5rTI+Gh+Wd8hNVQFg0qCgu2zBWMTiHRy2uBHjUzRDG1faYWsVeoLUk47t2NxjZYSIbbF2lmz3mxHr2Pw+5MREnutC5dtZH37HmeyKAnyemezuQnrn+foDTTBwhv+HeGCVcGZEh7u4oC3nKg3OGFNqRrcpAoMDCz1ooycjoqALtpBTRpinHHHg+Z3KRh7lKw71+i8bd6j2g61gb6OmU83MlMdmeUl644w8gftpLLWREaZDXc7Mo0afi1uL1hXxkAWfXMSsbe9MSLXx5nz/lYUZZzh+PCcRKR3CLG0QHakUyXsifk78L6RvSknkafMZoVzp0gOaPPcxomGk3ISmWk2W1QiL/XUqw6Z7dYyDpGpOYncYTZrNcWkNEJrpagMnnXV/wdxepfRgZwddo/KSeRs50DLtPhrDnru9abMOCky0K5M5u27JxiQjYge6j3SMM3onaBj0BS0Zc0jgftIKC3DJ9IOG93u0mcn6DZlJREcaIhTqlQg3eB9loQzuPD+xRLXnPGfkDB+Px14Q11GOre7gBMT9aXba9Khm7TND8k72FBHHXU05MLfj7+o1sleCwAAAAAASUVORK5CYII="
+                />
+              </defs>
+            </svg>
+            <span>Nusa Tech</span>
+          </a>
+        </div>
+
+        <nav class="nav">
+          <div class="hidden cross-btn-container">
+            <svg
+              class="cross-btn"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.2882 14.9617C16.4644 15.1378 16.5633 15.3767 16.5633 15.6258C16.5633 15.8749 16.4644 16.1137 16.2882 16.2898C16.1121 16.466 15.8733 16.5649 15.6242 16.5649C15.3751 16.5649 15.1362 16.466 14.9601 16.2898L9.99997 11.3281L5.03825 16.2883C4.86213 16.4644 4.62326 16.5633 4.37418 16.5633C4.12511 16.5633 3.88624 16.4644 3.71012 16.2883C3.534 16.1122 3.43506 15.8733 3.43506 15.6242C3.43506 15.3751 3.534 15.1363 3.71012 14.9602L8.67184 10L3.71168 5.03828C3.53556 4.86216 3.43662 4.62329 3.43662 4.37422C3.43662 4.12515 3.53556 3.88628 3.71168 3.71016C3.8878 3.53404 4.12668 3.43509 4.37575 3.43509C4.62482 3.43509 4.86369 3.53404 5.03981 3.71016L9.99997 8.67188L14.9617 3.70938C15.1378 3.53326 15.3767 3.43431 15.6257 3.43431C15.8748 3.43431 16.1137 3.53326 16.2898 3.70938C16.4659 3.8855 16.5649 4.12437 16.5649 4.37344C16.5649 4.62251 16.4659 4.86138 16.2898 5.0375L11.3281 10L16.2882 14.9617Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <ul>
+            <li>
+              <a href="#" class="header-active"> Home </a>
+            </li>
+            <li>
+              <a href="#"> About Us </a>
+            </li>
+            <li>
+              <a href="#"> Features </a>
+            </li>
+            <li>
+              <a href="#"> Our Works </a>
+            </li>
+            <li>
+              <a href="#"> Pricing </a>
+            </li>
+            <li>
+              <a href="#"> Resources </a>
+            </li>
+          </ul>
+        </nav>
 
         <div class="headet-btns">
           <a href="#" class="headet-btn header-btn-sign-in">Sign in</a>
@@ -66,5 +97,6 @@
         </div>
       </div>
     </header>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -25,13 +25,14 @@ a {
   text-decoration: none;
 }
 header {
-  padding: 2.6rem 6.9rem;
+  padding: 2rem 6.9rem;
   background: var(--secondary-color);
   border-bottom: 1px solid var(--border-gray);
 }
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .logo {
   display: flex;
@@ -69,7 +70,9 @@ header ul li a {
   border-radius: 0.3rem;
   background-color: var(--primary-color);
 }
-
+.hidden {
+  display: none;
+}
 .headet-btns {
   display: flex;
   align-items: center;
@@ -84,5 +87,58 @@ header ul li a {
   padding: 1.7rem 2rem;
   background: var(--primary-color);
 
-  border-radius: 0.7rem;
+  border-radius: 1.5rem;
+}
+/* header responsiveness */
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 2rem 1.2rem;
+  }
+  .header ul {
+    gap: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hidden {
+    display: block;
+    cursor: pointer;
+  }
+  .header-mobile-btn {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .hamburger {
+    width: 3rem;
+    height: 3rem;
+    color: var(--text-color);
+  }
+  .cross-btn-container {
+    margin-right: auto;
+  }
+  .cross-btn-container svg {
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: var(--secondary-color);
+    height: 100%;
+    width: 36%;
+    padding: 3.6rem 1.2rem;
+    transition: left 0.51s ease-in-out;
+  }
+  .header ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .open {
+    left: 0%;
+  }
 }
