@@ -15,8 +15,10 @@ html {
 :root {
   --secondary-color: #2d2d2d;
   --primary-color: #ac6cff;
+  --primary-dark-color: #ac6cff;
   --border-gray: #808080;
   --text-color: #f8f9ff;
+  --hero-bg-ball: #3a1070;
 }
 body {
   font-family: "Montserrat", sans-serif;
@@ -28,6 +30,8 @@ header {
   padding: 2rem 6.9rem;
   background: var(--secondary-color);
   border-bottom: 1px solid var(--border-gray);
+  position: relative;
+  z-index: 2;
 }
 .header {
   display: flex;
@@ -141,4 +145,145 @@ header ul li a {
   .open {
     left: 0%;
   }
+}
+/* section home */
+
+main {
+  position: relative;
+
+  background-color: #2d2d2d;
+}
+.background-container {
+  background: url("./images/image\ 2.svg");
+  background-repeat: no-repeatss;
+  background-size: cover;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+}
+.home {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3.2rem;
+  text-align: center;
+
+  z-index: 1;
+}
+.ball {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background-color: red;
+}
+.ball-1 {
+  top: 5%;
+  right: 47%;
+
+  background-color: #e2ff30;
+}
+
+.ball-2 {
+  top: 10%;
+  right: 3%;
+
+  background-color: #f2bfaf;
+}
+.ball-3 {
+  bottom: 5%;
+  right: 20%;
+
+  background-color: #ffa800;
+}
+.ball-4 {
+  bottom: 8%;
+  left: 5%;
+  background-color: #eadaff;
+}
+.ball-5 {
+  top: 8%;
+  left: 5%;
+  background-color: #f2bfaf;
+}
+.ball-6 {
+  bottom: 8%;
+  left: 30%;
+  background-color: #ac6cff;
+}
+.text-container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 90%;
+}
+
+.home h1 {
+  font-size: 5.2rem;
+  font-weight: bold;
+  line-height: 130%;
+  margin-bottom: 3.2rem;
+  color: var(--text-color);
+  margin-bottom: 6.4rem;
+}
+.home h1 span {
+  color: var(--primary-dark-color);
+}
+.home p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  margin-bottom: 5.8rem;
+  width: 80%;
+}
+.input-wrapper {
+  position: relative;
+
+  width: 600px;
+  margin: 0 auto;
+}
+.hero-input {
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--text-color);
+  color: var(--border-gray);
+  font-size: 1.2rem;
+
+  border-radius: 1.5rem;
+  border: none;
+}
+
+.input-svg {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border: none;
+}
+.home .headet-btns {
+  margin-top: 3.2rem;
+}
+.hero-input:focus {
+  outline: none;
+  border: 2px solid var(--primary-color);
+  box-shadow: none;
+}
+.header-btn-sign-in {
+  padding: 1.7rem 2rem;
+  border: 2px solid var(--primary-color);
+
+  border-radius: 1.5rem;
 }
